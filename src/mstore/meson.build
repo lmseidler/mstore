@@ -20,6 +20,7 @@ srcs += files(
   'amylose.f90',
   'but14diol.f90',
   'f_block.f90',
+  'inorganic.f90',
   'heavy28.f90',
   'ice10.f90',
   'il16.f90',

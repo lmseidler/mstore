@@ -31,6 +31,7 @@ module mstore
    use mstore_polyalanine, only : get_polyalanine_records
    use mstore_rc21, only : get_rc21_records
    use mstore_upu23, only : get_upu23_records
+   use mstore_inorganic, only : get_inorganic_records
    use mstore_x23, only : get_x23_records
    implicit none
    private
@@ -137,6 +138,7 @@ subroutine get_mstore_collections(collections)
       new_collection("f-block", get_f_block_records), &
       new_collection("Heavy28", get_heavy28_records), &
       new_collection("ICE10", get_ice10_records), &
+      new_collection("INORGANIC", get_inorganic_records), &
       new_collection("IL16", get_il16_records), &
       new_collection("MB16-43", get_mb16_43_records), &
       new_collection("POLYALANINE", get_polyalanine_records), &
